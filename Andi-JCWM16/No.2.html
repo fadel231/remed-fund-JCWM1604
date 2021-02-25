@@ -1,0 +1,70 @@
+<html>
+<head>
+<script type="text/javascript" src="No.2.js"></script>
+</head>
+<body>
+<div id="wrapper">
+<table align='center' cellspacing=2 cellpadding=5 id="form" border=1>
+
+    <h1>Form Product</h1>
+    <tr>
+<th>No</th>    
+<th>Name</th>
+<th>Price</th>
+<th>Category</th>
+<th>Actions</th>
+</tr>
+
+<tr id="row1">
+<td id="no_row1">1</td>    
+<td id="name_row1">Coca Cola</td>
+<td id="price_row1">5000</td>
+<td id="category_row1">Drink</td>
+<td>
+<input type="button" id="edit_button1" value="Edit" class="edit" onclick="edit_row('1')">
+<input type="button" id="save_button1" value="Save" class="save" onclick="save_row('1')">
+<input type="button" value="Delete" class="delete" onclick="delete_row('1')">
+</td>
+</tr>
+
+<tr id="row2">
+    <td id="no_row2">2</td>    
+    <td id="name_row2">Beng Beng</td>
+    <td id="price_row2">4500</td>
+    <td id="category_row2">Food</td>
+<td>
+<input type="button" id="edit_button2" value="Edit" class="edit" onclick="edit_row('2')">
+<input type="button" id="save_button2" value="Save" class="save" onclick="save_row('2')">
+<input type="button" value="Delete" class="delete" onclick="delete_row('2')">
+</td>
+</tr>
+
+<tr id="row3">
+    <td id="No_row3">3</td>    
+    <td id="name_row3">Fanta</td>
+    <td id="price_row3">5000</td>
+    <td id="category_row3">Drink</td>
+<td>
+<input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('3')">
+<input type="button" id="save_button3" value="Save" class="save" onclick="save_row('3')">
+<input type="button" value="Delete" class="delete" onclick="delete_row('3')">
+</td>
+</tr>
+
+<tr>
+    <td><input type="number" id="new_No"></td>  
+    <td><input type="text" id="new_name"></td>
+    <td><input type="text" id="new_price"></td>
+    <td> 
+        <input type="radio" name="new_category" value="Drink">Drink
+        <input type="radio" name="new_category" value="Food">Food 
+        <input type="radio" name="new_category" value="Others">Others 
+          
+    <td><input type="button" class="add" onclick="add_row();" value="Add"></td>
+    </tr>
+
+</table>
+</div>
+
+</body>
+</html>

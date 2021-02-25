@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="No.1.js"></script>
+    <title>Vowel</title>
+</head>
+<body>
+    <h1>Masukkan Kata:</h1>
+    <td><input type="text" id="input" placeholder="huruf">
+    <br>
+    <br>
+    <input type="button"  onclick="hitung_vokal();">
+    <input type="button"  onclick="huruf_vokal();">
+    <input type="button"  onclick="tanpa_vokal();">
+    </td>
+    <tbody>
+        <h3 id = 'Hasil'></h3>
+    </tbody>
+    <script>
+        function tanpa_vokal() {
+    let input = document.getElementById("input").value
+    let hasil = `Tanpa Vokal: ${input.replace(/[aiueo]/ig, (m, i) => i = "")}`
+    document.getElementById("hasil").innerHTML = hasil;
+}
+
+function huruf_vokal() {
+    let Input = document.getElementById("input").value
+    Input = Input.toString().toSplit('')
+    let j = str.toLowerCase().toString().split('')
+    let a = j.filter(val => val == 'a')
+    let i = j.filter(val => val == 'i')
+    let u = j.filter(val => val == 'u')
+    let e = j.filter(val => val == 'e')
+    let o = j.filter(val => val == 'o')
+    let hasil = `Huruf Vokal: ${a}${i}${u}${e}${o}`
+    console.log(hasil)
+    document.getElementById("hasil").innerHTML = Hasil
+
+    }
+    
+
+    </script>
+</body>
+</html>
